@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "DancingFont";
+    src: url("../fonts/dancingscript-regular-webfont.ttf");
+    src: url("../fonts/dancingscript-regular-webfont.woff") format("woff");
+}
+
+.merah{
+    background-color:red;
+}
