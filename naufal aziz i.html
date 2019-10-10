@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pelangi</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+
+        }
+
+        table {
+            height: 100%;
+            min-height: 100%;
+        }
+
+        html {
+            height: 100%;
+            min-height: 100%;
+        }
+
+        body {
+            margin: 0px auto;
+            min-height: 100vh;
+        }
+
+        #atas {
+            background-color: blue;
+            width: 100%;
+            height: 150px;
+            margin: 0px;
+        }
+
+        #bawah {
+            background-color: gray;
+            width: 100%;
+            height: 150px;
+            margin: 0px;
+        }
+
+        #kiri {
+            background-color: red;
+            width: 33.3px;
+            height: 150px;
+            margin: 0px;
+        }
+
+        #tengah {
+            background-color: yellow;
+            width: 33.3px;
+            height: 150px;
+            margin: 0px;
+        }
+
+        #kanan {
+            background-color: green;
+            width: 33.3px;
+            height: 150px;
+            margin: 0px;
+        }
+
+        button {
+            padding: 5px;
+        }
+
+        #tombol {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="3" id="atas"></td>
+        </tr>
+        <tr>
+            <td id="kiri"></td>
+            <td id="tengah">
+                <div id="tombol">
+                    <button type="button" onclick="fb1();">
+                        1
+                    </button>
+                    <button type="button" onclick="fb2();">
+                        2
+                    </button>
+                    <button type="button" onclick="fb3();">
+                        3
+                    </button>
+                    <button type="button" onclick="fb4();">
+                        4
+                    </button>
+                    <button type="button" onclick="fb5();">
+                        5
+                    </button>
+                </div>
+            </td>
+            <td id="kanan"></td>
+        </tr>
+        <tr>
+            <td colspan="3" id="bawah"></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <script>
+        function fb1(color) {
+            document.getElementById("atas").style.background = "red";
+            document.getElementById("kiri").style.background = "yellow";
+            document.getElementById("tengah").style.background = "green";
+            document.getElementById("kanan").style.background = "gray";
+            document.getElementById("bawah").style.background = "blue";
+        }
+
+        function fb2(color) {
+            document.getElementById("atas").style.background = "yellow";
+            document.getElementById("kiri").style.background = "green";
+            document.getElementById("tengah").style.background = "gray";
+            document.getElementById("kanan").style.background = "blue";
+            document.getElementById("bawah").style.background = "red";
+        }
+
+        function fb3(color) {
+            document.getElementById("atas").style.background = "green";
+            document.getElementById("kiri").style.background = "gray";
+            document.getElementById("tengah").style.background = "blue";
+            document.getElementById("kanan").style.background = "red";
+            document.getElementById("bawah").style.background = "yellow";
+        }
+
+        function fb4(color) {
+            document.getElementById("atas").style.background = "gray";
+            document.getElementById("kiri").style.background = "blue";
+            document.getElementById("tengah").style.background = "red";
+            document.getElementById("kanan").style.background = "yellow";
+            document.getElementById("bawah").style.background = "green";
+        }
+
+        function fb5(color) {
+            document.getElementById("atas").style.background = "blue";
+            document.getElementById("kiri").style.background = "red";
+            document.getElementById("tengah").style.background = "yellow";
+            document.getElementById("kanan").style.background = "green";
+            document.getElementById("bawah").style.background = "gray";
+        }
+    </script>
+</body>
+
+</html>
